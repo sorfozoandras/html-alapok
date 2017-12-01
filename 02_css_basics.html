@@ -1,60 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Css Alapok</title>
 </head>
 <body>
-  
-<a href="index.html">vissza az oldalra!</a>    
-      
+
+<a href="./index.html">vissza a főoldalra</a>
+
 <h1>CSS Alapok</h1>
-                
-<div style="background-color: #0061ff; height: 300px; text-align: center; color :white;">
-               
-<p>2. ez is egy inline style, csak több css property</p>
 
-               Ez egy kék doboz, inline style-al kiszinezve</div> 
-                
-  <p>3. css class:"pirosdiv" css classal ellátott html elem, megkapja a style tag-ben lévő .pirosdiv összes css property-t</p> 
+<h2>10.0.28.33</h2>
+<h2> user: diak </h2>
+<h2> jelszo: tanulo </h2>
+<p>
+1. inline style, a kovetkezo div-nek a kék betűszínt állítottuk be
+</p>
+<div style="color: blue;">ez a szoveg kék</div>
 
-  
-  <div class="pirosdiv">Ez egy piros div.</div>
+<p>2. ez is egy inline style, csak több css property-t adtunk meg</p>
 
-<div id="lekerekitett"> Ennek a széle le van kerelítve</div>
-div.kekdiv
-   div#valami
-    
-            
+<div style="background-color: #0061ff; 
+            height: 300px; 
+            text-align: center; 
+            color: white; 
+  ">
+  Ez egy kék doboz, inline style-al kiszinezve</div>
+
+<p>3. css class: "pirosdiv" css classal ellátott html elem, 
+megkapja a style tag-ben lévő .pirosdiv összes css property-t</p>
+
+<div class="pirosdiv">asdas Ez egy piros div.</div>
+<div id="lekerekitett">Ennek a széle le van kerekítve</div>
+
 <style>
-/*ez egy css comment. a style tagek közé nem html hanem css kódot kell írni.*/    
-/* a pirosdiv class-al ellátott html elemekre    az alábbi tulajdonságok vonatkoznak: */  
+/* ez egy css comment. a style tagek közé nem html hanem css kódot kell írni.*/
+/* a pirosdiv class-al ellátott html elemekre az alábbi tulajdonságok vonatkoznak: */
 .pirosdiv {
- background-color: red;
- height: 120px;
- color: white;
- text-align: center;
- padding-top: 70px;
-    
-} 
-        /*a kettőskereszt id-t jelent css-ben, a pont class-t jelent */
-    
-        #lekerekitett {
-            /* a padding befelé tolja ya tartalmat*/
-            padding: 30px;
-            /* a margin a html elem körül hat*/
-            margin-top: 20px;
-            background-color: black;
-            height:120px;
-            color:white;
-            border-radius: 20px;
-            height: 300px;
-        }
-     
-    
-</style> 
-                                                                                                                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    background-color: red;
+    height: 120px;
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+/* a kettőskereszt id-t jelent css-ben, a pont class-t jelent */
+#lekerekitett {
+    /* a padding befelé tolja a tartalmat */
+    padding: 30px;
+    /* a margin a html elem körül hat */
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    height: 300px;
+}
+</style>
+
+
+<div class="doboz sarga-doboz">Ez itt egy sarga doboz</div>
+<div class="doboz zold-doboz">ez itt ez egy zold bozo</div>
+<div id="specialis-doboz" class="doboz">ez egy specialis doboz</div>
+
+<style>
+
+/* a # kettőskereszt id-t jelent css-ben, a pont pedig class-t jelent */
+.doboz {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 20px;
+  color: white;
+}
+
+.sarga-doboz {
+  background-color: yellow;
+}
+.zold-doboz {
+  background-color: green;
+}
+
+#specialis-doboz {
+  background-color: black;
+  border: 10px solid green;
+
+}
+
+</style>
+
+<a href="./03_css_basics.html">Tovább a következő oldalra</a>
+
 </body>
 </html>
